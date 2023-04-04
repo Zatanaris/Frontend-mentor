@@ -1,0 +1,196 @@
+:root {
+    font-size: 62.5%;
+
+    --primary: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium--Grey: hsl(216, 12%, 54%);
+    --Dark--Blue: hsl(213, 19%, 18%);
+    --Dark--b: hsl(208, 20%, 19%);
+    --Very--Dark--Blue: hsl(216, 12%, 8%);
+
+    --fs--text: 1.3rem;
+    --fw--rg: 400;
+    --fw--xl: 700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.6rem;
+    font-family: 'Overpass', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+main {
+    background-color: var(--Very--Dark--Blue);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background-color: var(--Dark--Blue);
+    width: 90%;
+    max-width: 33.1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.Question--card {
+    width: fit-content;
+    display: grid;
+    gap: 1rem;
+}
+
+.star {
+    padding: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--Dark--Blue);
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, .3);
+}
+
+.question--title,
+.result--title {
+    font-size: 2.4rem;
+    font-weight: var(--fw--rg);
+    color: var(--White);
+}
+
+.question--text {
+    font-size: var(--fs--text);
+    font-weight: var(--fw--rg);
+    color: var(--Medium--Grey);
+}
+
+.question--list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list--item {
+    width: 4.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--Dark--Blue);
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 1.2rem;
+}
+
+.list--item:is(:hover, :focus) {
+    background-color: var(--primary);
+}
+
+.list--item:is(:hover, :focus) .btn--list {
+    color: var(--White);
+}
+
+.btn--list {
+    color: var(--Light-Grey);
+    display: inline-block;
+}
+
+.btn {
+    padding-block: .8rem;
+    border-radius: 100vh;
+    border: none;
+    background-color: var(--primary);
+    color: var(--White);
+    font-size: var(--fs--text);
+    font-weight: var(--fw--xl);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+
+.btn:is(:hover, :focus) {
+    background-color: var(--White);
+    color: var(--primary);
+}
+
+.active {
+    background-color: var(--Light-Grey);
+}
+
+.active a {
+    color: var(--White);
+}
+
+.result--card {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.result {
+    width: fit-content;
+    padding: 1.5rem;
+    border-radius: 100vh;
+    background-color: var(--Dark--b);
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, .1);
+}
+
+.result p {
+    color: var(--primary);
+    font-size: var(--fs--text);
+}
+
+.result--text {
+    font-size: var(--fs--text);
+    font-weight: var(--fw--rg);
+    color: var(--Medium--Grey);
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
