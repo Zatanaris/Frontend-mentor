@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+        <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="assets/js/main.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.svg" alt="logo" />
+                </a>
+
+                <button class="open-btn">
+                    <img src="assets/images/icon-menu.svg" alt="open-btn-icon" />
+                </button>
+
+                <nav class="navbar">
+                    <button class="close-btn">
+                        <img src="assets/images/icon-close-menu.svg" alt="close-btn-icon" />
+                    </button>
+
+                    <ul class="nav--list">
+                        <li class="nav--item">
+                            <a href="#" class="nav--link nav--link--modifil" id="Features"
+                                >Features <img src="assets/images/icon-arrow-down.svg" alt="" />
+                            </a>
+                        </li>
+                        <li class="nav--item">
+                            <div class="drop--down Features">
+                                <div class="drop--item">
+                                    <img src="assets/images/icon-todo.svg" alt="todo" />
+                                    <a href="#" class="drop--link">todo list</a>
+                                </div>
+                                <div class="drop--item">
+                                    <img src="assets/images/icon-calendar.svg" alt="calendar" />
+                                    <a href="#" class="drop--link">calendar</a>
+                                </div>
+                                <div class="drop--item">
+                                    <img src="assets/images/icon-reminders.svg" alt="reminders" />
+                                    <a href="#" class="drop--link">reminders</a>
+                                </div>
+                                <div class="drop--item">
+                                    <img src="assets/images/icon-planning.svg" alt="planning" />
+                                    <a href="#" class="drop--link">planning</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav--item">
+                            <a href="#" class="nav--link nav--link--modifil" id="Company"
+                                >Company <img src="assets/images/icon-arrow-down.svg" alt=""
+                            /></a>
+                        </li>
+                        <li class="nav--item">
+                            <div class="drop--down Company">
+                                <div class="drop--item">
+                                    <a href="#" class="drop--link"> History </a>
+                                </div>
+                                <div class="drop--item">
+                                    <a href="#" class="drop--link"> Our Team </a>
+                                </div>
+                                <div class="drop--item">
+                                    <a href="#" class="drop--link"> Blog </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav--item">
+                            <a href="#" class="nav--link">Careers</a>
+                        </li>
+                        <li class="nav--item">
+                            <a href="#" class="nav--link">About</a>
+                        </li>
+                    </ul>
+                    <div class="box">
+                        <button class="btn--logui">Login</button>
+                        <button class="btn--register">Register</button>
+                    </div>
+                </nav>
+                <div class="overlay"></div>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <picture class="banner">
+                    <source
+                        srcset="/assets/images/image-hero-desktop.png"
+                        media="(min-width: 760px)"
+                    />
+                    <img src="assets/images/image-hero-mobile.png" alt="banner" />
+                </picture>
+
+                <div class="content">
+                    <h1 class="hero--title">Make remote work</h1>
+
+                    <p class="hero--text">
+                        Get your team in sync,nomatter your location. Streamline processes, create
+                        team rituals, and watch productivitysoar.
+                    </p>
+
+                    <button class="hero--btn">Learn more</button>
+
+                    <div class="marks">
+                        <a href="#" class="mark">
+                            <img src="assets/images/client-databiz.svg" alt="mark" />
+                        </a>
+                        <a href="#" class="mark">
+                            <img src="assets/images/client-audiophile.svg" alt="mark" />
+                        </a>
+                        <a href="#" class="mark">
+                            <img src="assets/images/client-meet.svg" alt="mark" />
+                        </a>
+                        <a href="#" class="mark">
+                            <img src="assets/images/client-maker.svg" alt="mark" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
